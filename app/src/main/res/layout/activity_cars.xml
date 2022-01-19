@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ptVrsNumber"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cars">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-317dp">
+
+        <EditText
+            android:id="@+id/ptVRSNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="№ свид. о рег. тс"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/ptStateNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Гос. номер"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/ptBrand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Бренд"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/ptYearOfIssue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Год выпуска"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/ptColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Цвет"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/ptNumberOfSeats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Кол-во мест"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/ptRepair"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ремонт"
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onSearchCars"
+                android:text="поиск" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onDeleteCars"
+                android:text="удалить" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onAddCars"
+                android:text="добавить" />
+
+            <Button
+                android:id="@+id/button20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onRefreshCar"
+                android:text="обнов" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onReadCars"
+                android:text="прочитать " />
+
+            <Button
+                android:id="@+id/button17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClearInputCArs"
+                android:text="очистить ввод" />
+
+            <Button
+                android:id="@+id/button18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onReadCarsAll"
+                android:text="показать все" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listViewCars"
+            android:layout_width="match_parent"
+            android:layout_height="296dp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
